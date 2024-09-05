@@ -3,3 +3,35 @@ body {
     background-color: rgb(218, 218, 218);
 }
 
+body #mainpage .header-page {
+    text-align: center;
+}
+
+body #mainpage .body .centersale {
+    background-image: linear-gradient(to right, rgb(39, 143, 180) , rgb(84, 107, 84));
+    border-radius: 20px;
+    width: 380px;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+body #mainpage .body .centerheader #besval-logo{
+    margin-top: 10px;
+}
+
+body #mainpage .body .centerheader h3{
+    font-size: 30px;
+    color: aliceblue;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+body #mainpage .body .centersale #sixbot-logo {
+    display: block;
+    margin-left: auto;
+}
+
+body #mainpage .body .centersale .inbody {
+    background-color: rgb(204, 248, 248);
+}
