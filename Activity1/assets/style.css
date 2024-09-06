@@ -15,11 +15,13 @@ body #mainpage .header-page {
 
 body #mainpage .body .centersale {
     background-image: linear-gradient(to right, rgb(39, 143, 180) , rgb(84, 107, 84));
-    border-radius: 20px;
+    border-radius: 15px;
     width: 380px;
     margin: 0 auto;
     margin-top: 30px;
     text-align: center;
+    overflow: hidden;
+    box-shadow: 10px 0px 8px rgba(0, 0, 0, 0.1);
 }
 
 body #mainpage .body .centerheader #besval-logo{
@@ -40,11 +42,21 @@ body #mainpage .body .centersale #sixbot-logo {
 
 body #mainpage .body .centersale .inbody {
     background-color: rgb(204, 248, 248);
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 15px;
+    padding-bottom: 3px;
+}
+
+body #mainpage .body .centersale .inbody .buy6 {
+    font-size: 18px;
+    margin-top: 50px;
 }
 
 body #mainpage .body .centersale .inbody .sixmonth {
     margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 18px;
 }
 
 body #mainpage .body .centersale .inbody .sixmonth p {
@@ -56,11 +68,6 @@ body #mainpage .body .centersale .inbody .sixmonth p {
 body #mainpage .body .centersale .inbody p {
     margin-top: 5px;
     margin-bottom: 5px;
-}
-
-body #mainpage .body .centersale .inbody .buy6 {
-    font-size: 18px;
-    margin-top: 50px;
 }
 
 body #mainpage .body .centersale .inbody #pricesix {
@@ -84,16 +91,25 @@ body #mainpage .body .centersale .inbody #bigamount {
 }
 
 body #mainpage .body .centersale .inbody .addtocart {
-    display: inline-block; /* Makes the div behave like an inline element */
-    background-color: #4CAF50; /* Green background */
-    color: white; /* White text */
-    padding: 10px 20px; /* Padding for the button */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(#4facfe, #00f2fe); 
+    color: white; 
+    padding: 10px 17px; /* Padding for the button */
     text-align: center; /* Center the text */
     text-decoration: none; /* Remove underline from text */
-    border-radius: 5px; /* Rounded corners */
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 50px; /* Rounded corners */
     cursor: pointer; /* Pointer cursor on hover */
     font-size: 16px; /* Font size */
     margin-top: 10px; /* Space above the button */
+}
+
+body #mainpage .body .centersale .inbody .addtocart img{
+    margin-right: 18px;
+    margin-left: 3px;
 }
 
 body #mainpage .body .centersale .inbody #cards-stuff {
@@ -105,11 +121,13 @@ body #mainpage .body .centersale .inbody #cards-stuff {
 }
 
 body #mainpage .body .footer {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 body #mainpage .body .footer p {
     margin-top: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold;
 }
