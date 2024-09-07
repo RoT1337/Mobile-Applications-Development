@@ -7,16 +7,81 @@ body {
     max-width: 1140px;
     margin: 0 auto;
     padding: 0 15px;
+    padding-top: 60px;
+    overflow: hidden;
 }
 
-body #mainpage .header-page {
+.main-content {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 0 auto;
+}
+
+#left {
+    flex: 0;
+    margin-top: 50px;
+    margin-right: 10px;
+}
+
+#center {
+    flex: 0;
+    margin: 0 10px;
+}
+
+#right {
+    flex: 0;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+body .main-content .header {
     text-align: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%; 
+    z-index: 1000; 
+    padding: 10px 0; 
 }
 
-body #mainpage .body .centersale {
+body #left .body .leftsale {
     background-image: linear-gradient(to right, rgb(39, 143, 180) , rgb(84, 107, 84));
     border-radius: 15px;
-    width: 380px;
+    width: 320px;
+    height: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    text-align: center;
+    overflow: visible;
+    box-shadow: 10px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+body #left .body .leftsale .leftheader {
+    background-color: #333; /* Dark color for the header */
+    color: white; /* White text color */
+    padding: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+body #left .body .leftsale .inbody {
+    background-color: white; /* White color for the body */
+    padding: 15px;
+}
+
+body #left .body .leftsale .footer {
+    background-color: #5da5a7; /* Lime color for the footer */
+    color: black; /* Black text color */
+    padding: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+body #center .body .centersale {
+    border-radius: 15px;
+    width: 370px;
     margin: 0 auto;
     margin-top: 30px;
     text-align: center;
@@ -24,110 +89,154 @@ body #mainpage .body .centersale {
     box-shadow: 10px 0px 8px rgba(0, 0, 0, 0.1);
 }
 
-body #mainpage .body .centerheader #besval-logo{
+body #center .body .centerheader {
+    background-image: linear-gradient(to right, rgb(39, 143, 180), rgb(84, 107, 84)); /* Keep the linear-gradient */
+    color: white; /* White text color */
+    padding: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+body #center .body .centerheader #besval-logo{
     margin-top: 10px;
 }
 
-body #mainpage .body .centerheader h3{
+body #center .body .centerheader h3{
     font-size: 30px;
     color: aliceblue;
     margin-top: 1px;
     margin-bottom: 10px;
 }
 
-body #mainpage .body .centersale #sixbot-logo {
+body #center .body .centersale #sixbot-logo {
     display: block;
     margin-left: auto;
 }
 
-body #mainpage .body .centersale .inbody {
+body #center .body .centersale .inbody {
     background-color: rgb(204, 248, 248);
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
     padding-top: 15px;
     padding-bottom: 3px;
 }
 
-body #mainpage .body .centersale .inbody .buy6 {
+body #center .body .centersale .inbody .buy6 {
     font-size: 18px;
     margin-top: 50px;
 }
 
-body #mainpage .body .centersale .inbody .sixmonth {
+body #center .body .centersale .inbody .sixmonth {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 18px;
 }
 
-body #mainpage .body .centersale .inbody .sixmonth p {
+body #center .body .centersale .inbody .sixmonth p {
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 15px;
 }
 
-body #mainpage .body .centersale .inbody p {
+body #center .body .centersale .inbody p {
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
-body #mainpage .body .centersale .inbody #pricesix {
+body #center .body .centersale .inbody #pricesix {
     color: red;
     text-decoration: line-through;
 }
 
-body #mainpage .body .centersale .inbody .only {
+body #center .body .centersale .inbody .only {
     margin-top: 20px;
     margin-bottom: 0px;
     font-size: 20px;
 }
 
-body #mainpage .body .centersale .inbody #nineseven {
+body #center .body .centersale .inbody #nineseven {
     font-size: 40px;
     margin-left: 5px;
 }
 
-body #mainpage .body .centersale .inbody #bigamount {
+body #center .body .centersale .inbody #bigamount {
     font-size: 100px;
 }
 
-body #mainpage .body .centersale .inbody .addtocart {
+body #center .body .centersale .inbody .addtocart {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(#4facfe, #00f2fe); 
     color: white; 
-    padding: 10px 17px; /* Padding for the button */
-    text-align: center; /* Center the text */
-    text-decoration: none; /* Remove underline from text */
+    padding: 10px 17px; 
+    text-align: center; 
+    text-decoration: none; 
     font-weight: bold;
     font-size: 16px;
-    border-radius: 50px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    font-size: 16px; /* Font size */
-    margin-top: 10px; /* Space above the button */
+    border-radius: 50px; 
+    cursor: pointer;
+    font-size: 16px; 
+    margin-top: 10px; 
 }
 
-body #mainpage .body .centersale .inbody .addtocart img{
+body #center .body .centersale .inbody .addtocart img{
     margin-right: 18px;
     margin-left: 3px;
 }
 
-body #mainpage .body .centersale .inbody #cards-stuff {
+body #center .body .centersale .inbody #cards-stuff {
     display: block;
-    margin-top: 10px; /* Optional: Add some space above the image */
+    margin-top: 10px;
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
 }
 
-body #mainpage .body .footer {
-    margin-top: 15px;
-    margin-bottom: 15px;
+body #center .body .footer {
+    background-color: #5da5a7; /* Color for the footer */
+    color: black; /* Black text color */
+    padding-top: 15px;
+    padding-bottom: 5px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
-body #mainpage .body .footer p {
+body #center .body .footer p {
     margin-top: 0px;
     margin-bottom: 10px;
     color: white;
     font-weight: bold;
+}
+
+body #right .body .rightsale .rightheader {
+    background-color: #333; /* Dark color for the header */
+    color: white; /* White text color */
+    padding: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+body #right .body .rightsale .inbody {
+    background-color: white; /* White color for the body */
+    padding: 15px;
+}
+
+body #right .body .rightsale .footer {
+    background-color: #5da5a7; /* Lime color for the footer */
+    color: black; /* Black text color */
+    padding: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+body #right .body .rightsale {
+    background-image: linear-gradient(to right, rgb(39, 143, 180) , rgb(84, 107, 84));
+    border-radius: 15px;
+    width: 340px;
+    margin-right: auto;
+    margin-top: 30px;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 10px 0px 8px rgba(0, 0, 0, 0.1);
 }
