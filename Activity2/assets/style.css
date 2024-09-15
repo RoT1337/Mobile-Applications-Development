@@ -1,0 +1,40 @@
+body {
+    font-family: Inter;
+    color: white;
+    background-color: lightblue;
+}
+
+.inside {
+    background-image: url(banner.jpg);
+    width: 1140px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.inside .leftside .leftbackground {
+    position: relative;
+}
+
+.inside .leftside .leftbackground img {
+    width: 60%;
+    height: 60%;
+    border-radius: 15px;
+}
+
+.inside .leftside .leftbackground .bottlepic {
+    position: absolute;
+    top: 50%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translate(-50%, -50%); /* Center the bottlepic inside leftbackground */
+}
+
+.inside .leftside .leftbackground .bottlepic img {
+    width: 45%;
+    height: 45%;
+}
+
+.rightside {
+    justify-content: center;
+}
