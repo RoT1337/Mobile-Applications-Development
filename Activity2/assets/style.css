@@ -13,22 +13,22 @@ body {
     margin: 0 auto;
 }
 
-.leftside {
-    justify-content: center; 
-    align-items: center; 
-}
-
 .leftside .leftbackground {
     position: relative;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -45px;
+    margin-bottom: 0px;
     display: flex; 
     justify-content: center; 
     align-items: center;
+    height: 100%;
+    width: 60%;
 }
 
 .leftside .leftbackground #bnrslidimg1 {
-    width: 60%;
-    height: 50%;
+    width: 70%;
+    height: 60%;
     border-radius: 15px;
 }
 
@@ -36,12 +36,16 @@ body {
     position: absolute;
     top: 50%; /* Adjust as needed */
     left: 50%; /* Adjust as needed */
-    transform: translate(-50%, -50%); /* Center the bottlepic inside leftbackground */
+    transform: translate(-44%, -30%); /* Center the bottlepic inside leftbackground */
 }
 
 .leftside .leftbackground .bottlepic img {
-    width: 45%;
-    height: 45%;
+    width: 90%;
+    height: 90%;
+}
+
+.leftside p {
+    transform: translate(42%, -400%); 
 }
 
 .rightside {
