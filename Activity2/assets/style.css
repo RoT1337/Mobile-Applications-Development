@@ -1,13 +1,20 @@
+body, html {
+    margin: 0;
+    padding: 0; 
+    height: 100%; 
+}
+
 body {
     font-family: Inter;
     color: white;
-    background-color: lightblue;
+    background-color: #081b3b;
+    overflow: hidden    ;
 }
 
 .inside {
     background-image: url(banner.jpg);
     width: 1140px;
-    height: 600px;
+    height: 730px;
     display: flex;
     justify-content: center;
     margin: 0 auto;
@@ -15,7 +22,7 @@ body {
 
 .leftside .leftbackground {
     position: relative;
-    margin-left: auto;
+    margin-left: 50px;
     margin-right: auto;
     margin-top: -45px;
     margin-bottom: 0px;
@@ -23,7 +30,7 @@ body {
     justify-content: center; 
     align-items: center;
     height: 100%;
-    width: 60%;
+    width: 100%;
 }
 
 .leftside .leftbackground #bnrslidimg1 {
@@ -34,20 +41,160 @@ body {
 
 .leftside .leftbackground .bottlepic {
     position: absolute;
-    top: 50%; /* Adjust as needed */
-    left: 50%; /* Adjust as needed */
-    transform: translate(-44%, -30%); /* Center the bottlepic inside leftbackground */
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-42%, -25%);
 }
 
 .leftside .leftbackground .bottlepic img {
-    width: 90%;
-    height: 90%;
+    width: 85%;
+    height: 85%;
 }
 
 .leftside p {
-    transform: translate(42%, -400%); 
+    transform: translate(49%, -400%); 
 }
 
 .rightside {
     justify-content: center;
+    width: 3500px;
+    margin-right: 50px;
+} 
+
+.rightside .header h1 {
+    font-size: 50px;
+    font-style: bold;
+}
+
+#crystal {
+    display: flex;
+    align-items: center;
+}
+
+#crystal img {
+    margin-right: 10px;
+}
+
+#crystal p {
+    margin: 0;
+}
+
+#dividehead {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#dividetext {
+    width: 50%;
+    margin: 20px 0; 
+}
+
+.fourknown {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.fourknown .topknown {
+    margin-right: 20px;
+}
+
+.fourknown .clear,
+.fourknown .naturally,
+.fourknown .blur,
+.fourknown .reenergize {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; 
+}
+
+.fourknown .clear img,
+.fourknown .naturally img,
+.fourknown .blur img,
+.fourknown .reenergize img {
+    margin-right: 10px; 
+    width: 40px; 
+    height: auto; 
+}
+
+.fourknown .clear p,
+.fourknown .naturally p,
+.fourknown .blur p,
+.fourknown .reenergize p {
+    margin: 0;
+    font-size: medium;
+}
+
+.buttonarea {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.discountbutton {
+    display: inline-flex;
+    align-items: center;
+    background-color: #00c249;
+    padding: 0px 150px; 
+    border-radius: 50px; 
+    cursor: pointer;
+    margin-top: 20px;   
+    margin-bottom: 10px;
+    border: 0;
+}
+
+.discountbutton p {
+    color: white; 
+    text-align: center; 
+    text-decoration: none; 
+    font-weight: bold;
+    font-size: 25px;    
+    margin-right: -50px;
+    margin-left: -50px;
+    margin-top: 15px;
+    margin-bottom: 15px;    
+}
+
+.belowbutton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.belowbutton .leftcheck, .rightcheck {
+    display: flex;
+    align-items: center;
+    margin-right: 20px  ;
+}
+
+.belowbutton .leftcheck #ylw1, .rightcheck #ylw2 {
+    margin-right: 5px;
+    width: 20px;
+    height: auto;
+}
+
+.belowbutton .leftcheck p, .rightcheck p {
+    margin: 0;
+    font-size: small;
+}
+
+.bodyfooterdivider {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer img {
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.footer #e {
+    display: block;
+    margin-top: 20px;
 }
