@@ -2,13 +2,14 @@ body, html {
     margin: 0;
     padding: 0; 
     height: 100%; 
+    overflow: auto;
 }
 
 body {
     font-family: Inter;
     color: white;
-    background-color: #081b3b;
-    overflow: hidden    ;
+    background-color: #091732;
+    overflow: hidden;
 }
 
 .inside {
@@ -18,6 +19,10 @@ body {
     display: flex;
     justify-content: center;
     margin: 0 auto;
+}
+
+.mobilecenterpic {
+    display: none;
 }
 
 .leftside .leftbackground {
@@ -51,8 +56,13 @@ body {
     height: 85%;
 }
 
+.leftside #carousel {
+    margin-left: 290px;
+    transform: translate(59%, -500%);
+}
+
 .leftside p {
-    transform: translate(49%, -400%); 
+    transform: translate(49%, -600%); 
 }
 
 .rightside {
@@ -66,6 +76,10 @@ body {
     font-style: bold;
 }
 
+.rightside .mobilebutton {
+    display: none;
+}
+
 #crystal {
     display: flex;
     align-items: center;
@@ -77,6 +91,10 @@ body {
 
 #crystal p {
     margin: 0;
+}
+
+#crystal #mobhead, #h1mob {
+    display: none;
 }
 
 #dividehead {
@@ -197,4 +215,139 @@ body {
 .footer #e {
     display: block;
     margin-top: 20px;
+}
+
+/* Le Mobile Versione */
+
+@media only screen and (max-width: 600px) {
+
+    .inside {
+        width: 80%;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        overflow: visible;
+    }
+
+    .leftside {
+        display: none;
+    }
+
+    .rightside {
+        margin-left: -25px;
+        margin-right: -25px;
+    }
+
+    .rightside .header p {
+        font-size: 14px;
+        font-style: bold;
+    }
+
+    .rightside .header #h1mob {
+        display: contents;
+        margin-top: 5px;
+        font-size: 29px;
+    }
+    
+    #crystal {
+        display: flex;
+        align-items: center;
+        margin-bottom: 7px;
+    }
+    
+    #crystal img {
+        margin-right: 10px;
+    }
+    
+    #crystal p {
+        margin: 0;
+    }
+
+    #crystal #mobhead {
+        font-size: 15px;
+        font-weight: bold;
+        display: contents;
+        color: #00a2ff;
+    }
+
+    #crystal #webhead, #h1web {
+        display: none;
+    }
+
+    .rightside .mobilecenterpic {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 110px;
+        margin-bottom: 100px;
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        height: 10%; /* Adjust height to make it smaller */
+        width: 10%;  /* Adjust width to make it smaller */
+    }
+    
+    .mobilecenterpic #bnrslidimg1 {
+        width: 350px;
+        height: 300px;
+        border-radius: 15px;
+    }
+    
+    .mobilecenterpic .bottlepic {
+        position: absolute;
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-41%, -43%);
+    }
+
+    .mobilecenterpic .bottlepic img {
+        width: 85%;
+        height: 85%;
+    }
+
+    .caromob {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        transform: translate(0%, -0%);
+        padding-left: 150px;
+    }
+    
+    #carousel {
+        margin-left: auto;
+    }
+
+    .rightside .mobilebutton {
+        display: contents;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .discountbutton {
+        display: inline-flex;
+        align-items: center;
+        background-color: #00c249;
+        padding: 0px 150px; 
+        border-radius: 50px; 
+        cursor: pointer;
+        margin-top: 10px;   
+        margin-bottom: 10px;
+        border: 0;
+    }
+    
+    .discountbutton p {
+        color: white; 
+        text-align: center; 
+        text-decoration: none; 
+        font-weight: bold;
+        font-size: 25px;    
+        margin-right: -50px;
+        margin-left: -50px;
+        margin-top: 15px;
+        margin-bottom: 15px;    
+    }
+
+    .rightside .buttonarea {
+        display: none;
+    }
 }
