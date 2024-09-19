@@ -25,6 +25,14 @@ body {
     display: none;
 }
 
+.caromob {
+    display: none;
+}
+
+.leftside {
+    margin-top: -65px;
+}
+
 .leftside .leftbackground {
     position: relative;
     margin-left: 50px;
@@ -58,22 +66,24 @@ body {
 
 .leftside #carousel {
     margin-left: 290px;
-    transform: translate(59%, -500%);
+    transform: translate(59%, -620%);
 }
 
 .leftside p {
-    transform: translate(49%, -600%); 
+    transform: translate(49%, -700%); 
 }
 
 .rightside {
     justify-content: center;
     width: 3500px;
     margin-right: 50px;
+    margin-top: 30px    ;
 } 
 
 .rightside .header h1 {
     font-size: 50px;
-    font-style: bold;
+    margin-bottom: 15px;
+    margin-top: 0px;
 }
 
 .rightside .mobilebutton {
@@ -83,6 +93,7 @@ body {
 #crystal {
     display: flex;
     align-items: center;
+    margin-bottom: 15px;
 }
 
 #crystal img {
@@ -91,20 +102,45 @@ body {
 
 #crystal p {
     margin: 0;
+    font-weight: bold;
 }
 
 #crystal #mobhead, #h1mob {
     display: none;
 }
 
+.headerbodydivider {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.divider-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#dividetext {
+    white-space: nowrap; 
+    margin-right: 0px; 
+}
+
 #dividehead {
-    margin-top: 10px;
-    margin-bottom: 20px;
+    flex-grow: 1; /* Allow the hr to take up the remaining space */
+    margin-top: 0px;
+    margin-bottom: 11px;
+    margin-right: 100px;
+    margin-left: -60px; 
 }
 
 #dividetext {
     width: 50%;
-    margin: 20px 0; 
+    margin-bottom: 15px; 
+    font-weight: bold;
+}
+
+.dheadmobile {
+    display: none;
 }
 
 .fourknown {
@@ -217,7 +253,7 @@ body {
     margin-top: 20px;
 }
 
-/* Le Mobile Versione */
+/* media for mobile */
 
 @media only screen and (max-width: 600px) {
 
@@ -238,6 +274,7 @@ body {
     }
 
     .rightside .header p {
+        margin-top: -15px;
         font-size: 14px;
         font-style: bold;
     }
@@ -283,6 +320,7 @@ body {
         align-items: center;
         height: 10%; /* Adjust height to make it smaller */
         width: 10%;  /* Adjust width to make it smaller */
+        position: relative;
     }
     
     .mobilecenterpic #bnrslidimg1 {
@@ -295,25 +333,26 @@ body {
         position: absolute;
         top: 50%; 
         left: 50%; 
-        transform: translate(-41%, -43%);
+        transform: translate(-430%, -25%);
     }
 
     .mobilecenterpic .bottlepic img {
-        width: 85%;
-        height: 85%;
+        width: 880%;
+        height: 880%;
     }
 
     .caromob {
+        display: contents;
         margin-left: auto;
         margin-right: auto;
         margin-top: 0px;
         margin-bottom: 0px;
         transform: translate(0%, -0%);
-        padding-left: 150px;
     }
     
     #carousel {
         margin-left: auto;
+        padding-left: 165px;
     }
 
     .rightside .mobilebutton {
@@ -327,12 +366,16 @@ body {
         display: inline-flex;
         align-items: center;
         background-color: #00c249;
-        padding: 0px 150px; 
+        padding: 0px 110px; 
         border-radius: 50px; 
         cursor: pointer;
         margin-top: 10px;   
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         border: 0;
+    }
+
+    .belowbutton {
+        margin: 0 auto;
     }
     
     .discountbutton p {
@@ -340,7 +383,7 @@ body {
         text-align: center; 
         text-decoration: none; 
         font-weight: bold;
-        font-size: 25px;    
+        font-size: 24px;    
         margin-right: -50px;
         margin-left: -50px;
         margin-top: 15px;
@@ -349,5 +392,91 @@ body {
 
     .rightside .buttonarea {
         display: none;
+    }
+
+    .headerbodydivider {
+        display: none;
+    }
+
+    .dheadmobile {
+        display: contents;
+        text-align: center;
+    }
+
+    .divider-container {
+        margin-top: 20px;
+    }
+
+    #dividetext {
+        font-weight: bold;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .dheadmobile #dividehead1 {
+        flex-grow: 1; 
+        margin-right: auto;
+        margin-left: 30px;
+        margin-top: 0px;
+        margin-bottom: 11px;
+    }
+
+    .dheadmobile #dividehead2 {
+        flex-grow: 1; 
+        margin-right: 30px;
+        margin-left: auto;
+        margin-top: 0px;
+        margin-bottom: 11px; 
+    }
+
+    .fourknown {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+    
+    .fourknown .topknown {
+        margin-right: 0px;
+        width: auto;
+        height: auto;
+    }
+
+    .fourknown .bottomknown {
+        width: auto;
+        height: auto;
+    }
+    
+    .fourknown .clear,
+    .fourknown .naturally,
+    .fourknown .blur,
+    .fourknown .reenergize {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 10px; 
+    }
+    
+    .fourknown .clear img,
+    .fourknown .naturally img,
+    .fourknown .blur img,
+    .fourknown .reenergize img {
+        margin-bottom: 5px; 
+        margin-right: 0px;
+        width: 40px; 
+        height: auto; 
+    }
+    
+    .fourknown .clear p,
+    .fourknown .naturally p,
+    .fourknown .blur p,
+    .fourknown .reenergize p {
+        margin: 0;
+        font-size: medium;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .footer {
+        margin-top: -10px;
     }
 }
