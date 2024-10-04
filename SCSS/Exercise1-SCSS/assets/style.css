@@ -1,0 +1,410 @@
+body {
+    font-family: Inter;
+    background-color: rgb(218, 218, 218);
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+    overflow: hidden;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 0 auto;
+}
+
+#left {
+    flex: 0;
+    margin-top: 50px;
+    margin-right: 10px;
+}
+
+#center {
+    flex: 0;
+    margin: 0 10px;
+}
+
+#right {
+    flex: 0;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+body .header {
+    font-size: 24px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    padding: 5px 0; 
+    margin: 0;
+}
+
+body #left .body .leftsale {
+    border-radius: 15px;
+    width: 360px;
+    height: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 10px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+body #left .body .leftsale .leftheader {
+    background-color: #000000;
+    padding: 5px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+body #left .body .leftsale .leftheader h3 {
+    color: silver;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+body #left .body .leftsale .leftheader h2 {
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+body #left .body .leftsale .inbody {
+    background-color: white; 
+    padding: 15px;
+}
+
+body #left .body .leftsale .inbody p {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+body #left .body .leftsale .inbody .onemonth p {
+    font-size: 18px;
+    margin-top: 1px;
+    margin-bottom: 15px;
+}
+
+body #left .body .leftsale .inbody #regprice {
+    font-size: 20px;
+}
+
+body #left .body .leftsale .inbody #pricesix {
+    font-weight: normal;
+    color: red;
+    text-decoration: line-through;
+}
+
+body #left .body .leftsale .inbody #nineseven {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+body #left .body .leftsale .inbody #bigamount {
+    font-size: 80px;
+}
+
+body #left .body .leftsale .inbody .addtocart {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(#4facfe, #00f2fe); 
+    color: white; 
+    padding: 10px 17px; 
+    text-align: center; 
+    text-decoration: none; 
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 50px; 
+    cursor: pointer;
+    font-size: 16px; 
+    margin-top: 10px; 
+}
+
+body #left .body .leftsale .inbody .addtocart img{
+    margin-right: 18px;
+    margin-left: 3px;
+}
+
+body #left .body .leftsale .inbody #cards-stuff {
+    display: block;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body #left .body .leftsale .footer {
+    background-color: #5da5a7;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+body #left .body .leftsale .footer p {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+body #center .body .centersale {
+    border-radius: 15px;
+    width: 380px;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 10px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+body #center .body .centerheader {
+    background-image: linear-gradient(to right, rgb(39, 143, 180), rgb(84, 107, 84));
+    color: white; 
+    padding: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+body #center .body .centerheader #besval-logo{
+    margin-top: 10px;
+}
+
+body #center .body .centerheader h3{
+    font-size: 30px;
+    color: aliceblue;
+    margin-top: 1px;
+    margin-bottom: 5px;
+}
+
+body #center .body .centersale #sixbot-logo {
+    display: block;
+    margin-left: auto;
+}
+
+body #center .body .centersale .inbody {
+    background-color: rgb(204, 248, 248);
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 15px;
+    padding-bottom: 3px;
+}
+
+body #center .body .centersale .inbody .buy6 {
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+body #center .body .centersale .inbody .sixmonth {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+body #center .body .centersale .inbody .sixmonth p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 15px;
+}
+
+body #center .body .centersale .inbody p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+body #center .body .centersale .inbody #sixbot-logo {
+    margin-bottom: 15px;
+}
+
+body #center .body .centersale .inbody #regprice {
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+body #center .body .centersale .inbody #pricesix {
+    font-weight: normal;
+    color: red;
+    text-decoration: line-through;
+}
+
+body #center .body .centersale .inbody .only {
+    margin-top: 15px;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+body #center .body .centersale .inbody #nineseven {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+body #center .body .centersale .inbody #bigamount {
+    font-size: 80px;
+}
+
+body #center .body .centersale .inbody .addtocart {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(#4facfe, #00f2fe); 
+    color: white; 
+    padding: 10px 17px; 
+    text-align: center; 
+    text-decoration: none; 
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 50px; 
+    cursor: pointer;
+    font-size: 16px; 
+    margin-top: 10px; 
+}
+
+body #center .body .centersale .inbody .addtocart img{
+    margin-right: 18px;
+    margin-left: 3px;
+}
+
+body #center .body .centersale .inbody #cards-stuff {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body #center .body .footer {
+    background-color: #5da5a7; 
+    padding-top: 15px;
+    padding-bottom: 5px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+body #center .body .footer p {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+body #right .body .rightsale {
+    border-radius: 15px;
+    width: 360px;
+    margin-right: auto;
+    margin-top: 25px;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 10px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+body #right .body .rightsale .rightheader {
+    background-color: #000000; /* Dark color for the header */
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+body #right .body .rightsale .rightheader h3 {
+    color: gold;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+body #right .body .rightsale .rightheader h2 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+body #right .body .rightsale .inbody {
+    background-color: white; 
+    padding: 15px;
+}
+
+body #right .body .rightsale .inbody p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+body #right .body .rightsale .inbody .threemonths p {
+    font-size: 18px;
+    margin-top: 1px;
+    margin-bottom: 15px;
+}
+
+body #right .body .rightsale .inbody #threebot-logo{
+    margin-bottom: 10px;
+}
+
+body #right .body .rightsale .inbody #regprice {
+    font-size: 20px;
+}
+
+body #right .body .rightsale .inbody #pricesix {
+    font-weight: normal;
+    color: red;
+    text-decoration: line-through;
+}
+
+body #right .body .rightsale .inbody .only {
+    margin-top: 15px;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+body #right .body .rightsale .inbody #bigamount {
+    font-size: 80px;
+}
+
+body #right .body .rightsale .inbody #nineseven {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+body #right .body .rightsale .inbody .addtocart {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(#4facfe, #00f2fe); 
+    color: white; 
+    padding: 10px 17px; 
+    text-align: center; 
+    text-decoration: none; 
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 50px; 
+    cursor: pointer;
+    font-size: 16px; 
+    margin-top: 10px; 
+}
+
+body #right .body .rightsale .inbody img{
+    margin-right: 18px;
+    margin-left: 3px;
+}
+
+body #right .body .rightsale .inbody #cards-stuff {
+    display: block;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body #right .body .rightsale .footer {
+    background-color: #5da5a7;
+    padding: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+body #right .body .rightsale .footer p {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    color: white;
+    font-weight: bold;
+}

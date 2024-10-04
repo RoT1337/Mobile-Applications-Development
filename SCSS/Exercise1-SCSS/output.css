@@ -1,0 +1,178 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-color: rgb(218, 218, 218);
+}
+body .header {
+  font-size: 24px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 5px 0;
+  margin: 0;
+}
+body #left, body #center, body #right {
+  flex: 0;
+}
+body #left {
+  margin-top: 50px;
+  margin-right: 10px;
+}
+body #center {
+  margin: 0 10px;
+}
+body #right {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+body .container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+  overflow: hidden;
+}
+body .main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+  gap: 5px;
+}
+body .leftsale, body .centersale, body .rightsale {
+  border-radius: 15px;
+  width: 360px;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 10px 0px 8px rgba(0, 0, 0, 0.1);
+}
+body .leftsale {
+  margin-top: 30px;
+}
+body .leftsale .leftheader, body .leftsale .centerheader, body .leftsale .rightheader {
+  background-color: #000000;
+  padding: 5px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+body .leftsale .leftheader h3, body .leftsale .centerheader h3, body .leftsale .rightheader h3 {
+  color: silver;
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+body .leftsale .leftheader h2, body .leftsale .centerheader h2, body .leftsale .rightheader h2 {
+  color: white;
+  margin: 0 0 10px;
+}
+body .leftsale .inbody {
+  background-color: white;
+  padding: 15px;
+}
+body .leftsale .inbody p {
+  margin: 3px 0;
+}
+body .leftsale .inbody .onemonth p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+body .leftsale .inbody #regprice {
+  font-size: 20px;
+}
+body .leftsale .inbody #pricesix {
+  color: red;
+  text-decoration: line-through;
+}
+body .leftsale .inbody #nineseven, body .leftsale .inbody #bigamount {
+  font-size: 20px;
+  margin-left: 5px;
+}
+body .leftsale .inbody .addtocart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(#4facfe, #00f2fe);
+  color: white;
+  padding: 10px 17px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+body .leftsale .inbody .addtocart img {
+  margin-right: 18px;
+  margin-left: 3px;
+}
+body .leftsale .inbody #cards-stuff {
+  display: block;
+  margin: 15px auto;
+}
+body .leftsale .footer {
+  background-color: #5da5a7;
+  padding: 15px 5px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+body .leftsale .footer p {
+  color: white;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+body .centersale {
+  border-radius: 15px;
+  width: 380px;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 10px 0px 8px rgba(0, 0, 0, 0.1);
+}
+body .centersale .centerheader {
+  background-image: linear-gradient(to right, rgb(39, 143, 180), rgb(84, 107, 84));
+  padding: 10px;
+}
+body .centersale .centerheader h3 {
+  font-size: 30px;
+  color: aliceblue;
+  margin: 1px 0 5px;
+}
+body .centersale .inbody {
+  background-color: rgb(204, 248, 248);
+  padding: 15px 0 3px;
+}
+body .centersale .inbody .buy6, body .centersale .inbody .sixmonth {
+  font-size: 18px;
+  margin: 50px 0 10px;
+}
+body .centersale .inbody .sixmonth p {
+  font-size: 15px;
+  margin: 0;
+}
+body .centersale .inbody #sixbot-logo {
+  margin-bottom: 15px;
+}
+body .rightsale {
+  margin-top: 25px;
+}
+body .rightsale .rightheader {
+  background-color: #000000;
+  padding: 10px;
+}
+body .rightsale .rightheader h3 {
+  color: gold;
+  margin: 10px 0 3px;
+}
+body .rightsale .inbody {
+  padding: 15px;
+}
+body .rightsale .inbody .threemonths p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+body .rightsale .inbody #threebot-logo {
+  margin-bottom: 10px;
+}
+body .rightsale .inbody .only {
+  font-size: 20px;
+  margin: 15px 0 0;
+}
+
+/*# sourceMappingURL=output.css.map */

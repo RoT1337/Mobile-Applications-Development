@@ -1,0 +1,228 @@
+// Variables
+$font-family: 'Inter', sans-serif;
+$bg-color: rgb(218, 218, 218);
+$container-width: 1140px;
+$box-shadow: 10px 0px 8px rgba(0, 0, 0, 0.1);
+$primary-header-bg: #000000;
+$primary-color: white;
+$secondary-color: silver;
+$highlight-color: red;
+$footer-bg: #5da5a7;
+$gradient-bg: linear-gradient(#4facfe, #00f2fe);
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin box-style($width: 360px) {
+  border-radius: 15px;
+  width: $width;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: $box-shadow;
+}
+
+// Main Styles
+body {
+  font-family: $font-family;
+  background-color: $bg-color;
+
+  .header {
+    font-size: 24px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 5px 0;
+    margin: 0;
+  }
+
+  #left, #center, #right {
+    flex: 0;
+  }
+
+  #left {
+    margin-top: 50px;
+    margin-right: 10px;
+  }
+
+  #center {
+    margin: 0 10px;
+  }
+
+  #right {
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+
+  .container {
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: 0 15px;
+    overflow: hidden;
+  }
+
+  .main-content {
+    @include flex-center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .leftsale, .centersale, .rightsale {
+    @include box-style();
+  }
+
+  .leftsale {
+    margin-top: 30px;
+
+    .leftheader, .centerheader, .rightheader {
+      background-color: $primary-header-bg;
+      padding: 5px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+
+      h3 {
+        color: $secondary-color;
+        margin-top: 10px;
+        margin-bottom: 3px;
+      }
+
+      h2 {
+        color: $primary-color;
+        margin: 0 0 10px;
+      }
+    }
+
+    .inbody {
+      background-color: $primary-color;
+      padding: 15px;
+
+      p {
+        margin: 3px 0;
+      }
+
+      .onemonth p {
+        font-size: 18px;
+        margin-bottom: 15px;
+      }
+
+      #regprice {
+        font-size: 20px;
+      }
+
+      #pricesix {
+        color: $highlight-color;
+        text-decoration: line-through;
+      }
+
+      #nineseven, #bigamount {
+        font-size: 20px;
+        margin-left: 5px;
+      }
+
+      .addtocart {
+        @include flex-center;
+        background-image: $gradient-bg;
+        color: $primary-color;
+        padding: 10px 17px;
+        border-radius: 50px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 10px;
+
+        img {
+          margin-right: 18px;
+          margin-left: 3px;
+        }
+      }
+
+      #cards-stuff {
+        display: block;
+        margin: 15px auto;
+      }
+    }
+
+    .footer {
+      background-color: $footer-bg;
+      padding: 15px 5px;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+
+      p {
+        color: $primary-color;
+        font-weight: bold;
+        margin: 0 0 10px;
+      }
+    }
+  }
+
+  .centersale {
+    @include box-style(380px);
+
+    .centerheader {
+      background-image: linear-gradient(to right, rgb(39, 143, 180), rgb(84, 107, 84));
+      padding: 10px;
+
+      h3 {
+        font-size: 30px;
+        color: aliceblue;
+        margin: 1px 0 5px;
+      }
+    }
+
+    .inbody {
+      background-color: rgb(204, 248, 248);
+      padding: 15px 0 3px;
+
+      .buy6, .sixmonth {
+        font-size: 18px;
+        margin: 50px 0 10px;
+      }
+
+      .sixmonth p {
+        font-size: 15px;
+        margin: 0;
+      }
+
+      #sixbot-logo {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .rightsale {
+    margin-top: 25px;
+
+    .rightheader {
+      background-color: $primary-header-bg;
+      padding: 10px;
+
+      h3 {
+        color: gold;
+        margin: 10px 0 3px;
+      }
+    }
+
+    .inbody {
+      padding: 15px;
+
+      .threemonths p {
+        font-size: 18px;
+        margin-bottom: 15px;
+      }
+
+      #threebot-logo {
+        margin-bottom: 10px;
+      }
+
+      .only {
+        font-size: 20px;
+        margin: 15px 0 0;
+      }
+    }
+  }
+}
