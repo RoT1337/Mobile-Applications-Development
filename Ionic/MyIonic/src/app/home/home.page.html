@@ -1,0 +1,56 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="scrollToTop()">
+        <!--<ion-icon slot="icon-only" name="arrow-back"></ion-icon>-->
+        Back to Top
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="settings"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <!--<p>in betweening text!</p>-->
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-title style="text-align: center;">Exploring toolbars</ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-searchbar></ion-searchbar>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-segment value="all">
+      <ion-segment-button value="all">
+        <ion-label>All</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="favorites">
+        <ion-label>Favorites</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="myexample">
+        <ion-label>Books</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <p style="text-align: center;">Exploring ion-content</p>
+  <ion-button expand="block" (click)="scrollToBottom()">Scroll to Bottom</ion-button>
+  <p style="text-align: justify;">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec est nisl. Morbi euismod dapibus est vel eleifend. Etiam auctor, nibh non cursus pharetra, nibh nulla placerat dui, vel luctus mi purus id ligula. Fusce sagittis elit in varius pulvinar. Maecenas congue sollicitudin velit, vitae tincidunt tellus placerat vitae. Suspendisse ac interdum nisi. Cras blandit mi ex, id volutpat erat venenatis et.
+  </p>
+  <p style="text-align: justify;">
+    Donec orci justo, imperdiet sed erat eget, ultricies tincidunt nisi. Aliquam rhoncus est eget laoreet ultricies. Vestibulum vitae purus mattis, varius felis eget, efficitur elit. In hac habitasse platea dictumst. Donec consequat auctor feugiat. Nullam in turpis ut orci volutpat tempor. Donec aliquet, turpis eu imperdiet varius, ex ex interdum tellus, non cursus mi velit at lectus. Vestibulum tempor ligula quis enim pellentesque imperdiet. Suspendisse bibendum bibendum est, eget suscipit erat facilisis pharetra. Sed pretium viverra ligula. Aliquam interdum iaculis urna, ut semper metus viverra sit amet.
+  </p>  
+  <p style="text-align: justify;">  
+    Fusce cursus arcu ac eleifend aliquam. Vestibulum laoreet euismod tristique. Aliquam malesuada semper nibh, a tempus odio. Fusce nec maximus velit. Vestibulum vehicula neque a tellus lacinia, ut tristique nisl euismod. Nulla tincidunt elementum felis, ac auctor ligula faucibus sed. Aenean nulla arcu, pellentesque sed diam nec, porta ornare diam. Mauris pretium volutpat interdum. Etiam vehicula ligula eu orci pretium efficitur. Vivamus varius congue erat. Aliquam erat volutpat. Sed molestie ante orci. Etiam vestibulum arcu sit amet eros dictum vulputate. Nullam lobortis ex lacinia nisi ultrices, a vulputate dolor sodales. Proin id faucibus ex, a consequat mi. Ut dolor ex, consectetur id nisl in, gravida pretium felis. 
+  </p>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title style="text-align: center;"></ion-title>
+    <ion-progress-bar type="indeterminate"></ion-progress-bar>
+  </ion-toolbar>
+</ion-footer>
