@@ -1,0 +1,23 @@
+@mixin flex-center-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+ion-header {
+    ion-toolbar {
+        ion-title {
+            text-align: center;
+        }
+    }
+}
+
+ion-content {
+    ion-row {
+        ion-col {
+            width: 50%;
+            text-align: center;
+        }
+    }
+}
