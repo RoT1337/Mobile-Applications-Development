@@ -7,17 +7,17 @@
 <ion-content [fullscreen]="true" class="ion-padding">
   <ion-list>
     <ion-item>
-      <ion-input label="Username" placeholder=""></ion-input>
+      <ion-input id="uName" label="Username" placeholder="email@address.com"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-input label="Password" type="Password" placeholder=""></ion-input>
+      <ion-input id="pWord" label="Password" type="Password" placeholder="*****"></ion-input>
     </ion-item>
   </ion-list>
   <!--If toolbar in content, will scroll with the content-->
   <ion-row>
     <ion-col>
-      <ion-button>
-        Submit
+      <ion-button id="loginBtn" (click)="myClick()">
+        Login
       </ion-button>
     </ion-col>
   </ion-row>
