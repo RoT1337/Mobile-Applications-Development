@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { AlertController } from '@ionic/angular';
 import { User } from './model';
 
 @Component({
@@ -11,8 +10,9 @@ export class LoginPage implements OnInit {
   user = new User("example@static.net", "password1");
   usernameInp!: string;
   passwordInp!: string;
-
-  constructor(private alertController: AlertController) { }
+  isAlertOpenSuccess = false;
+  isAlertOpenFailed = false;
+  alertButtons = ['OK'];
 
   ngOnInit() {
     this.logUserCredentials();
@@ -23,50 +23,16 @@ export class LoginPage implements OnInit {
     console.log('Static Password', this.user.getPassword());
   }
 
-  async myClick() {
+  myClick(isOpen: boolean) {
     this.usernameInp = (document.getElementById('uName') as HTMLInputElement).value;
     this.passwordInp = (document.getElementById('pWord') as HTMLInputElement).value;
 
-    if (this.usernameInp === "" || (this.usernameInp === null && this.passwordInp === "")) {
-      const alert = await this.alertController.create({
-        header: 'Login Failed',
-        message: 'Please input username',
-        buttons: ['OK']
-      }); 
+    if (this.usernameInp === this.user.getUsername() && this.passwordInp === this.user.getPassword()){
+      this.isAlertOpenSuccess = isOpen;
 
-      await alert.present();
-    } else if (this.usernameInp != "" && this.passwordInp == "") {
-      const alert = await this.alertController.create({
-        header: 'Login Failed',
-        message: 'Please input password',
-        buttons: ['OK']
-      }); 
-
-      await alert.present();
-    } else if (this.usernameInp != this.user.getUsername() && this.passwordInp != this.user.getPassword()) {
-      const alert = await this.alertController.create({
-        header: 'Login Failed',
-        message: 'Username and password is incorrect',
-        buttons: ['OK']
-      }); 
-
-      await alert.present();
-    } else if (this.usernameInp === this.user.getUsername() && this.passwordInp === this.user.getPassword()){
-      const alert = await this.alertController.create({
-        header: 'Login Successful',
-        message: `Welcome ${this.user.getUsername()}`,
-        buttons: ['OK']
-      }); 
-
-      await alert.present();
     } else {
-      const alert = await this.alertController.create({
-        header: 'Login Failed',
-        message: `Logic Not Implemented or Something Went Wrong`,
-        buttons: ['OK']
-      }); 
+      this.isAlertOpenFailed = isOpen;
 
-      await alert.present();
     }
   }
 }

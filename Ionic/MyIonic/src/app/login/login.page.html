@@ -16,9 +16,23 @@
   <!--If toolbar in content, will scroll with the content-->
   <ion-row>
     <ion-col>
-      <ion-button id="loginBtn" (click)="myClick()">
+      <ion-button id="loginBtn" (click)="myClick(true)">
         Login
       </ion-button>
+      <ion-alert
+        [isOpen]="isAlertOpenFailed"
+        header="Login Failed"
+        message="Please Input Again"
+        [buttons]="alertButtons"
+        (didDismiss)="myClick(false)"
+      ></ion-alert>
+      <ion-alert
+        [isOpen]="isAlertOpenSuccess"
+        header="Login Success"
+        message="Welcome!"
+        [buttons]="alertButtons"
+        (didDismiss)="myClick(false)"
+      ></ion-alert>
     </ion-col>
   </ion-row>
 </ion-content>
