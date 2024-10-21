@@ -51,10 +51,18 @@ export class LoginPage implements OnInit {
       }); 
 
       await alert.present();
-    } else {
+    } else if (this.usernameInp === this.user.getUsername() && this.passwordInp === this.user.getPassword()){
       const alert = await this.alertController.create({
         header: 'Login Successful',
         message: `Welcome ${this.user.getUsername()}`,
+        buttons: ['OK']
+      }); 
+
+      await alert.present();
+    } else {
+      const alert = await this.alertController.create({
+        header: 'Login Failed',
+        message: `Logic Not Implemented or Something Went Wrong`,
         buttons: ['OK']
       }); 
 
