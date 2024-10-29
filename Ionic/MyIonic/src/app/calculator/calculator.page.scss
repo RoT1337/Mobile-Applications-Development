@@ -1,0 +1,27 @@
+ion-content {
+    text-align: center;
+    ion-input {
+        font-size: 35px;
+    }
+    ion-grid {
+        ion-input {
+            text-align: right;
+            margin-left: -20px;
+        }
+        ion-row {
+            padding-bottom: 5px;
+        }
+    }
+    ion-button {
+        color: white;
+    }
+    ion-button.special {
+        --background: #9f9f9f;
+    }
+    ion-button.number {
+        --background: #333;
+    }
+    ion-button.arithmetic {
+        --background: #F69003;
+    }
+}
