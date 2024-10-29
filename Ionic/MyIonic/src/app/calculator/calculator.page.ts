@@ -62,9 +62,6 @@ export class CalculatorPage implements OnInit {
       case '/':
         result = prev / current;
         break;
-      case '%':
-        result = prev % current;
-        break;
       default:
         return;
     }
@@ -84,6 +81,20 @@ export class CalculatorPage implements OnInit {
 
   onEqualsClick() {
     this.calculateResult();
+  }
+
+  onPercentageClick() {
+    if (this.currentInput !== '') {
+      this.currentInput = (parseFloat(this.currentInput) / 100).toString();
+      this.updateInputElement();
+    }
+  }
+
+  onPlusMinusClick() {
+    if (this.currentInput !== '') {
+      this.currentInput = (parseFloat(this.currentInput) * -1).toString();
+      this.updateInputElement();
+    }
   }
 
   updateInputElement() {
