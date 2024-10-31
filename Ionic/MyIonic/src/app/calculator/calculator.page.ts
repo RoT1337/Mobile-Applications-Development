@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, HostListener } from '@angular/core';
 import { IonInput } from '@ionic/angular';
 
 @Component({
@@ -16,6 +16,32 @@ export class CalculatorPage implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  @HostListener('window:keydown', ['$event'])
+  handleKeyboardEvent(event: KeyboardEvent) {
+    const key = event.key;
+    if (!isNaN(Number(key))) {
+      this.onNumberClick(key);
+    } else if (key === '+') {
+      this.onArithmeticClick(' + ');
+    } else if (key === '-') {
+      this.onArithmeticClick(' - ');
+    } else if (key === '*') {
+      this.onArithmeticClick(' * ');
+    } else if (key === '/') {
+      this.onArithmeticClick(' / ');
+    } else if (key === 'Enter' || key === '=') {
+      this.onEqualsClick();
+    } else if (key === 'Escape') {
+      this.clearInput();
+    } else if (key === '.') {
+      this.onDecimalClick();
+    } else if (key === '%') {
+      this.onPercentageClick();
+    } else if (key === 'p') {
+      this.onPlusMinusClick();
+    }
   }
 
   onNumberClick(number: string) {
