@@ -26,6 +26,14 @@ const routes: Routes = [
     path: 'calculator',
     loadChildren: () => import('./calculator/calculator.module').then( m => m.CalculatorPageModule)
   },
+  {
+    path: 'user-search',
+    loadChildren: () => import('./user-search/user-search.module').then( m => m.UserSearchPageModule)
+  },
+  {
+    path: 'menu-wheader',
+    loadChildren: () => import('./menu-wheader/menu-wheader.module').then( m => m.MenuWheaderPageModule)
+  },
 
 ];
 
