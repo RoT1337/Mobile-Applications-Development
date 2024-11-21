@@ -21,6 +21,7 @@ export class CalculatorPage implements OnInit {
   @HostListener('window:keydown', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent) {
     const key = event.key;
+    console.log("Key pressed: " + key);
     if (!isNaN(Number(key))) {
       this.onNumberClick(key);
     } else if (key === '+') {
@@ -31,9 +32,9 @@ export class CalculatorPage implements OnInit {
       this.onArithmeticClick(' * ');
     } else if (key === '/') {
       this.onArithmeticClick(' / ');
-    } else if (key === 'Enter' || key === '=') {
+    } else if (key === 'Enter') {
       this.onEqualsClick();
-    } else if (key === 'Escape') {
+    } else if (key === 'Backspace') {
       this.clearInput();
     } else if (key === '.') {
       this.onDecimalClick();
@@ -62,6 +63,7 @@ export class CalculatorPage implements OnInit {
   }
 
   clearInput() {
+    console.log("Clearing Input...");
     this.currentInput = '';
     this.previousInput = '';
     this.operator = '';
@@ -125,5 +127,8 @@ export class CalculatorPage implements OnInit {
 
   updateInputElement() {
     this.inputElement.value = this.currentInput;
+    console.log("Current Input: " + this.currentInput);
+    console.log("Previous Input: " + this.previousInput);
+    console.log("Arithmetic Operator: " + this.operator);
   }
 }

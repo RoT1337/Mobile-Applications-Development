@@ -1,0 +1,17 @@
+ion-menu {
+    ion-list {
+        background: transparent;
+        ion-button {
+            color: white;
+            ion-icon {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+ion-content {
+    ion-list {
+        background: transparent;
+    }
+}
