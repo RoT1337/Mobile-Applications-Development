@@ -6449,3 +6449,16 @@ Ionic/node_modules/yoctocolors-cjs/package.json
 Ionic/node_modules/yoctocolors-cjs/readme.md
 Ionic/package-lock.json
 Ionic/package.json
+ProjectCRUD/package.json
+ProjectCRUD/karma.conf.js
+ProjectCRUD/ionic.starter.json
+ProjectCRUD/ionic.config.json
+ProjectCRUD/angular.json
+ProjectCRUD/.vscode/settings.json
+ProjectCRUD/.vscode/extensions.json
+ProjectCRUD/.eslintrc.json
+ProjectCRUD/.editorconfig
+ProjectCRUD/.browserslistrc
+ProjectCRUD/tsconfig.app.json
+ProjectCRUD/tsconfig.json
+ProjectCRUD/tsconfig.spec.json
