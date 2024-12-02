@@ -1,29 +1,33 @@
 <ion-menu contentId="loginmenu">
   <ion-header>
     <ion-toolbar>
-      <ion-title>Menu Content</ion-title>
+      <ion-title>Navigation Panel</ion-title>
     </ion-toolbar>
   </ion-header>
   <ion-content class="ion-padding">
     <ion-list>
-      <ion-item>
-        <ion-button href="home">
+      <ion-item color="none" lines="none">
+        <ion-button size="default" fill="clear" href="home">
+          <ion-icon name="home"></ion-icon>
           Home
         </ion-button>
       </ion-item>
-      <ion-item>
-        <ion-button href="user-search">
+      <ion-item color="none" lines="none">
+        <ion-button size="default" fill="clear" href="user-search">
+          <ion-icon name="search"></ion-icon>
           User Search
         </ion-button>
       </ion-item>
-      <ion-item>
-        <ion-button href="calculator">
+      <ion-item color="none" lines="none">
+        <ion-button size="default" fill="clear" href="calculator">
+          <ion-icon name="calculator"></ion-icon>
           Calculator
         </ion-button>
       </ion-item>
     </ion-list>
   </ion-content>
 </ion-menu>
+
 
 <ion-header [translucent]="true">
   <div id="loginmenu">

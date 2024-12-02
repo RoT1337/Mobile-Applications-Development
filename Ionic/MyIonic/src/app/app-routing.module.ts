@@ -34,6 +34,10 @@ const routes: Routes = [
     path: 'menu-wheader',
     loadChildren: () => import('./menu-wheader/menu-wheader.module').then( m => m.MenuWheaderPageModule)
   },
+  {
+    path: 'test-api',
+    loadChildren: () => import('./test-api/test-api.module').then( m => m.TestApiPageModule)
+  },
 
 ];
 
